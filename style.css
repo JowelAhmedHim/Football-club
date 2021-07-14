@@ -86,3 +86,46 @@ nav ul li a {
 .banner .add-btn p {
     margin-right: 8px;
 }
+
+/* main part design */
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 45px;
+    margin: 70px 0px;
+}
+
+.player {
+    background-color: #FFFFFF;
+    width: 330px;
+    height: 456px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 256px;
+
+}
+
+.player-name {
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.player-info h3 {
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+
+.player-detail {
+    font-size: 16px;
+    color: #6C6C6C;
+
+}
