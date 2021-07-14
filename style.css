@@ -17,38 +17,31 @@ body {
     margin: 0 auto;
 }
 
-
-/* navigation bar design */
+.add-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    cursor: pointer;
+}
 
 header {
     width: 100%;
     height: 677px;
     background-color: #2d25a0;
-}
-
-.navbar {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-nav {
-    flex: 1;
-    text-align: left;
 
 }
 
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 36px;
+.animation img {
+    width: 30px;
+    height: 30px;
+    transition: transform 2s;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #FFFFFF;
-    padding: 10px 0;
-    font-size: 16px;
+header:hover .animation img {
+    transform: translate(500px);
 }
 
 
@@ -58,7 +51,10 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 50px;
 }
+
+
 
 .banner h1 {
     color: #FFFFFF;
@@ -72,15 +68,8 @@ nav ul li a {
 }
 
 .banner .add-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 24px;
     width: 168px;
     height: 44px;
-    color: #FFFFFF;
-    background-color: #E02C6D;
-    cursor: pointer;
 }
 
 .banner .add-btn p {
@@ -128,4 +117,85 @@ nav ul li a {
     font-size: 16px;
     color: #6C6C6C;
 
+}
+
+/* footer design */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 484px;
+    height: 110px;
+    margin-bottom: 20px;
+
+}
+
+.icon {
+    margin-bottom: 20px;
+}
+
+.icon img {
+    width: 32px;
+    height: 32px;
+
+}
+
+.copyright {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 63px;
+
+}
+
+/* Media Queries */
+
+/* Mobile decises */
+
+@media only screen and (max-width:688px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-img img {
+        width: 329px;
+        height: 259px;
+        margin-top: 50px;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+    }
+
+    .players {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* Tablet devices */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
